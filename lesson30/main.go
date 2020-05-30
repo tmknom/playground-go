@@ -55,7 +55,7 @@ func source(downsream chan string) {
 }
 
 func sleepyGopher(id int, c chan int) {
-	time.Sleep(time.Duration(rand.Intn(10000)) * time.Microsecond)
+	time.Sleep(time.Duration(rand.Intn(3000)) * time.Millisecond)
 	//fmt.Println("...", id, " snore ...")
 	c <- id
 }
